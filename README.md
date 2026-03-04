@@ -1,5 +1,5 @@
 # Samba
-Minimal Samba daemon.
+Minimal Samba server image.
 
 ## Purpose
 This Docker image is inteded to be a base image.
