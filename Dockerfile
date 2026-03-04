@@ -6,4 +6,4 @@ RUN apk upgrade --no-cache && \
 		samba-common-tools=4.23.5-r0 && \
 	addgroup --gid "873" "share"
 
-ENTRYPOINT ["smbd", "--interactive"]
+ENTRYPOINT ["smbd", "--foreground", "--no-process-group"]
