@@ -1,5 +1,5 @@
 FROM hetsh/alpine:20260127-7
-ARG LAST_UPGRADE="2026-04-25T14:43:22+02:00"
+ARG LAST_UPGRADE="2026-05-03T07:17:43+02:00"
 RUN apk upgrade --no-cache && \
 	apk add --no-cache \
 		samba-server=4.23.5-r1 \
