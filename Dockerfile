@@ -1,9 +1,9 @@
 FROM hetsh/alpine:20260127-7
-ARG LAST_UPGRADE="2026-05-10T12:49:37+02:00"
+ARG LAST_UPGRADE="2026-05-17T14:15:54+02:00"
 RUN apk upgrade --no-cache && \
 	apk add --no-cache \
-		samba-server=4.23.5-r1 \
-		samba-common-tools=4.23.5-r1 && \
+		samba-server=4.23.7-r0 \
+		samba-common-tools=4.23.7-r0 && \
 	addgroup --gid "873" "share"
 
 ENTRYPOINT ["smbd", "--foreground", "--no-process-group"]
